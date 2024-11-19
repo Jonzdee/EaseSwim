@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
+  
+
 </head>
 <body>
   <!-- navbar start -->
@@ -43,8 +46,8 @@
         src="https://cdn.pixabay.com/photo/2013/02/09/04/33/scuba-diving-79606_1280.jpg" 
         alt="Swimmer diving" 
         class="w-full h-[500px] object-cover">
-      <div class="absolute inset-0 flex flex-col justify-center items-center bg-blue-600 bg-opacity-40 text-white text-center p-5">
-        <h2 class="text-4xl font-bold">We Are The Best
+      <div class="absolute inset-0 flex flex-col justify-center items-center bg-blue-600 bg-opacity-40 text-white text-center p-5" data-aos="zoom-in" data-aos-duration="3000">
+        <h2 class="text-4xl font-bold"  >We Are The Best
           swimming Pool Provider</h2>
         <p class="text-xl mt-2">Experience the serenity of diving like never before.</p>
         <button class="mt-4 bg-blue-700 hover:bg-blue-800 text-white py-2 px-6 rounded-lg transition">
@@ -86,13 +89,18 @@
 </div>
 
  <!-- Services Header -->
- <header class="mb-10 text-center mt-6">
-  <h1 class="text-4xl font-bold text-gray-800">Our Services</h1>
+ <header class="mb-10 text-center mt-6" 
+ data-aos="fade-up"
+ data-aos-duration="3000">
+  <h1 class="text-4xl font-bold text-gray-800" >Our Services</h1>
   <p class="text-lg text-gray-600 mt-3">Explore our premium services designed to meet your needs</p>
 </header>
 
 <!-- Cards Container -->
-<div class="flex gap-6 flex-wrap justify-center py-10">
+<div class="flex gap-6 flex-wrap justify-center py-10" 
+data-aos="flip-left"
+data-aos-easing="ease-out-cubic"
+data-aos-duration="2000">
   <!-- Card 1 -->
   <div class="group relative w-72 h-80 rounded-lg shadow-2xl flex flex-col items-center justify-center overflow-hidden transition-transform transform hover:scale-105 bg-white">
     <!-- Blob Background -->
@@ -148,7 +156,7 @@
     <!-- Left Features -->
     <div class="space-y-8 fade-in">
       <!-- Best Equipment -->
-      <div class="flex flex-col items-center mt-12">
+      <div class="flex flex-col items-center mt-12" data-aos="zoom-in" data-aos-duration="2000">
         <div class="bg-blue-200 p-4 rounded-full mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 16l6-6m0 0l6-6M9 10v11m3-9a1 1 0 011-1h4m1 1v7a1 1 0 01-1 1H9m2-4h6" />
@@ -159,7 +167,7 @@
       </div>
 
       <!-- Exciting Places -->
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-duration="2000">
         <div class="bg-blue-200 p-4 rounded-full mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l-4 4-4-4m4-4v16" />
@@ -171,15 +179,15 @@
     </div>
 
     <!-- Center Image -->
-    <div class="flex justify-center hidden md:flex">
-      <img src="./bgswim.png" alt="Diver" class="w-full h-auto fade-in">
+    <div class="flex justify-center hidden md:flex" data-aos="flip-left" data-aos-duration="3000" >
+      <img src="./bgswim.png" alt="Diver" class="w-full h-auto fade-in" >
     </div>
     
 
     <!-- Right Features -->
-    <div class="space-y-8 fade-in">
+    <div class="space-y-8 fade-in" >
       <!-- 100% Safety -->
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-duration="2000">
         <div class="bg-blue-200 p-4 rounded-full mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -190,7 +198,7 @@
       </div>
 
       <!-- Instructors -->
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-duration="2000">
         <div class="bg-blue-200 p-4 rounded-full mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10l7-7m0 0l7 7M4 17h16" />
@@ -240,48 +248,60 @@
 
 <!-- Team Members -->
 <section class="bg-white dark:bg-gray-900">
-  <div class="container px-6 py-8 mx-auto">
+  <div class="container px-6 py-8 mx-auto" >
       <h2 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Our Team</h2>
 
       <div class="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          <div class="w-full max-w-xs text-center">
+          <div class="w-full max-w-xs text-center" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
               <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=739&q=80" alt="avatar" />
 
               <div class="mt-2">
-                  <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Ahmed Omer</h3>
+                  <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Itunu</h3>
                   <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">CEO</span>
               </div>
           </div>
 
-          <div class="w-full max-w-xs text-center">
+          <div class="w-full max-w-xs text-center" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
               <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://images.unsplash.com/photo-1516756587022-7891ad56a8cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="avatar" />
 
               <div class="mt-2">
-                  <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Jane Doe</h3>
+                  <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Toyin</h3>
                   <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">Co-founder</span>
               </div>
           </div>
 
-          <div class="w-full max-w-xs text-center">
+          <div class="w-full max-w-xs text-center" 
+          data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
               <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80" alt="avatar" />
 
               <div class="mt-2">
-                  <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Steve Ben</h3>
-                  <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">UI/UX</span>
+                  <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Steve </h3>
+                  <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">HR</span>
               </div>
           </div>
 
-          <div class="w-full max-w-xs text-center">
+          <div class="w-full max-w-xs text-center" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
               <img class="object-cover object-center w-full h-48 mx-auto rounded-lg" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="avatar" />
 
               <div class="mt-2">
-                  <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200">Patterson Johnson</h3>
+                  <h3 class="text-lg font-medium text-gray-700 dark:text-gray-200"> Johnson</h3>
                   <span class="mt-1 font-medium text-gray-600 dark:text-gray-300">Software Engineer</span>
               </div>
           </div>
       </div>
   </div>
 </section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="main.js"></script>
+
 </body>
 </html>
